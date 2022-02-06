@@ -1,8 +1,8 @@
 
 let n = 3;
 let winningButton;
-winningButton = winningButton ? winningButton : Math.floor(Math.random() * n);
-const onClick = function() {
+winningButton = Math.ceil(Math.random() * n);
+function onClick() {
   if (winningButton == this.id) {
     alert("Congratulations! You've guessed the button!")
   } else {
